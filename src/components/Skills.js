@@ -1,6 +1,12 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
+import csharpLogo from "../assets/img/c--4.svg";
+import reactjsImg from "../assets/img/React-icon.svg.png";
+import angularjsImg from "../assets/img/Angular_full_color_logo.svg.png";
+import pythonImg from "../assets/img/python-seeklogo.com.svg";
+import azureImg from "../assets/img/azure-1-logo-svgrepo-com.svg";
+import gitImg from "../assets/img/Git_icon.svg";
 
 export const Skills = () => {
     const responsive = {
@@ -33,32 +39,32 @@ export const Skills = () => {
                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has been the industry's standard dummy text.</p>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                               <div className="item">
-                                  <img src={''} alt="csharp" />
+                                  <img src={csharpLogo} alt="csharp" />
                                   <h5>C#</h5>
                                   <h6>Years: ~3</h6>
                               </div>
                               <div className="item">
-                                  <img src={''} alt="reactjs" />
+                                  <img src={reactjsImg} alt="reactjs" />
                                   <h5>ReactJS</h5>
                                   <h6>Years: ~1</h6>
                               </div>
                               <div className="item">
-                                  <img src={''} alt="angular" />  
+                                  <img src={angularjsImg} alt="angular" />  
                                   <h5>Angular</h5>
                                   <h6>Years: ~1</h6>
                               </div>
                               <div className="item">
-                                  <img src={''} alt="python" />
+                                  <img src={pythonImg} alt="python" />
                                   <h5>Python</h5>
                                   <h6>Years: ~3</h6>
                               </div>
                               <div className="item">
-                                  <img src={''} alt="azure" />
+                                  <img src={azureImg} alt="azure" />
                                   <h5>Azure Deployment</h5>
                                   <h6>Years: ~1</h6>
                               </div>
                               <div className="item">
-                                  <img src={''} alt="git" />
+                                  <img src={gitImg} alt="git" />
                                   <h5>Git</h5>
                                   <h6>Years: ~3</h6>
                               </div>
