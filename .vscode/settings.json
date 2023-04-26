@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/6f9f9a1b-af54-4106-a8e7-7c81e8d24409/resourceGroups/masoncathorall.com/providers/Microsoft.Web/sites/portfolio-mason",
+    "appService.deploySubpath": "."
+}
