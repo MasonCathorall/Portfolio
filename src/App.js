@@ -1,23 +1,21 @@
 import './App.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
+import { Footer } from './components/Footer';
 import { Skills } from './components/Skills';
-import { useEffect } from 'react';
+import { Contact } from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
-  useEffect(() => {
-    document.title = "Mason Cathorall's Portfolio"
-  }, []);
 
   return (
     <div className="App">
       <NavBar />
       <Banner />
       <Skills />
-      {/* <Projects />
+      {/* <Projects /> */}
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
