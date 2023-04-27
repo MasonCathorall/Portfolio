@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../assets/img/email-3249062_960_720.png";
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
 
