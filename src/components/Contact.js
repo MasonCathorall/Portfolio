@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/email-3249062_960_720.png";
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
-import Reaptcha from 'reaptcha';
 import axios from 'axios';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const Contact = () => {
 
@@ -30,9 +30,7 @@ export const Contact = () => {
   }
 
   const verify = () =>{
-    captchaRef.current.getResponse().then(res => {
-        setCaptchaToken(res)
-    })
+    setCaptchaToken(captchaRef.current.getValue());
     setEnableBtn(true);
   }
 
@@ -57,7 +55,6 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    // let token = captchaRef.current.getValue();
     captchaRef.current.reset();
 
     await axios.post("https://portfolio-backend-mason.azurewebsites.net/post", captchaToken)
@@ -111,7 +108,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <Reaptcha sitekey={process.env.REACT_APP_SITE_KEY} ref={captchaRef} onVerify={verify} />
+                      <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} ref={captchaRef} onChange={verify} />
                       <button type="submit" disabled={!enableBtn}><span>{buttonText}</span></button>
                     </Col>
                     {
