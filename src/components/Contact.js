@@ -62,18 +62,15 @@ export const Contact = () => {
           console.log(res);
           if(res.data === 'Human'){
             console.log('ReCAPTCHA says you are Human, sending Email.');
-            setStatus({ succes: true, message: 'ReCAPTCHA says you are Human, sending Email.'});
-            sendEmail();
           } else {
             console.log('ReCAPTCHA says you are Robot, please try again later.');
-            setStatus({ succes: false, message: 'ReCAPTCHA says you are Robot, please try again later.'});
           }
         })
         .catch((error) => {
         console.log(error);
         });
 
-    // sendEmail();
+    sendEmail();
     setButtonText("Send");
     
   };
