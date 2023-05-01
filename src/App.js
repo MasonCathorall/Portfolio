@@ -4,6 +4,7 @@ import { Banner } from './components/Banner';
 import { Footer } from './components/Footer';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
+import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <NavBar />
       <Banner />
       <Skills />
-      {/* <Projects /> */}
+      <Projects /> 
       <Contact />
       <Footer />
     </div>
