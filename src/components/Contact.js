@@ -108,7 +108,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} ref={captchaRef} onChange={verify} />
+                      <ReCAPTCHA sitekey='6LeSadElAAAAAJe8zPXzyReagHi1VOHcu90jCK-M' ref={captchaRef} onChange={verify} />
                       <button type="submit" disabled={!enableBtn}><span>{buttonText}</span></button>
                     </Col>
                     {
