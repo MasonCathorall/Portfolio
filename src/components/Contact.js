@@ -95,16 +95,16 @@ export const Contact = () => {
                 <form id="form" onSubmit={handleSubmit}> 
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.first} placeholder="First Name" onChange={(e) => onFormUpdate('first', e.target.value)} />
+                      <input type="text" value={formDetails.first} required placeholder="First Name" onChange={(e) => onFormUpdate('first', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.last} placeholder="Last Name" onChange={(e) => onFormUpdate('last', e.target.value)}/>
+                      <input type="text" value={formDetails.last} required placeholder="Last Name" onChange={(e) => onFormUpdate('last', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.their_email} placeholder="Email Address" onChange={(e) => onFormUpdate('their_email', e.target.value)} />
+                      <input type="email" value={formDetails.their_email} required placeholder="Email Address" onChange={(e) => onFormUpdate('their_email', e.target.value)} />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <textarea rows="6" value={formDetails.message} required placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                       <ReCAPTCHA sitekey='6LeSadElAAAAAJe8zPXzyReagHi1VOHcu90jCK-M' ref={captchaRef} onChange={verify} />
                       <button type="submit" disabled={!enableBtn}><span>{buttonText}</span></button>
                     </Col>
