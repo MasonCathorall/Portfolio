@@ -72,7 +72,7 @@ export const Contact = () => {
 
     sendEmail();
     setButtonText("Send");
-    
+    setFormDetails(formInitialDetails)
   };
 
   
