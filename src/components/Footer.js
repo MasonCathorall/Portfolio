@@ -14,7 +14,7 @@ export const Footer = () => {
             <div className="social-icon">
             <a href="https://www.linkedin.com/in/mason-cathorall-823a64262/"><img src={navIcon1} alt="" /></a>
             </div>
-            <p>Copyright 2023. All Rights Reserved</p>
+            <p>Copyright 2023. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Nav, Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 
@@ -57,9 +57,10 @@ export const Banner = () => {
                             {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className="tagline">Welcome to my Portfolio</span>
-                                <h1>{`Hi! I'm Mason Cathorall `} <span className="txt-rotate" data-rotate='[ "Web Developer", "Software Developer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                                <p>About myself.</p>
-                                <button onClick={() => console.log('connect')}>Contact Me<ArrowRightCircle size={25} /></button>
+                                <h1>{`Hi! I'm Mason Cathorall `} <span className="txt-rotate" data-rotate='[ " Web Developer", " Software Developer", " Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
+                                <p>Hi, my name is Mason Cathorall. I am a full stack .NET Software Engineer and I have successfully completed a bachelor's degree in computer science. Some extracurricular activities for me would have to be that I like to learn new frameworks. For instance, during my time in school, I started to learn how to code using React as well as during my time in college I took an elective to learn game design using unity.</p>
+                                <p>What got me into the technology/software development space was when I was in high school I learned about bitcoin mining and I was curious about how it worked. That started me down a long road to learning how to code and then going to school for computer science. Another thing that got me into software development happened when I was in high school where I took a web page design class.</p>
+                                <Nav.Link href="#connect">Contact Me <ArrowRightCircle size={25} /></Nav.Link>
                             </div>}
                         </TrackVisibility>
                     </Col>

@@ -7,6 +7,7 @@ import angularjsImg from "../assets/img/Angular_full_color_logo.svg.png";
 import pythonImg from "../assets/img/python-seeklogo.com.svg";
 import azureImg from "../assets/img/azure-1-logo-svgrepo-com.svg";
 import gitImg from "../assets/img/Git_icon.svg";
+import CICDImg from "../assets/img/ci-cd-svgrepo-com.svg";
 
 export const Skills = () => {
     const responsive = {
@@ -41,32 +42,42 @@ export const Skills = () => {
                               <div className="item">
                                   <img src={csharpLogo} alt="csharp" />
                                   <h5>C#</h5>
-                                  <h6>Years: ~3</h6>
+                                  {/* <h6>Years: ~3</h6> */}
                               </div>
                               <div className="item">
                                   <img src={reactjsImg} alt="reactjs" />
                                   <h5>ReactJS</h5>
-                                  <h6>Years: ~1</h6>
+                                  {/* <h6>Years: ~2</h6> */}
                               </div>
                               <div className="item">
                                   <img src={angularjsImg} alt="angular" />  
                                   <h5>Angular</h5>
-                                  <h6>Years: ~1</h6>
+                                  {/* <h6>Years: ~2</h6> */}
                               </div>
                               <div className="item">
                                   <img src={pythonImg} alt="python" />
                                   <h5>Python</h5>
-                                  <h6>Years: ~3</h6>
+                                  {/* <h6>Years: ~3</h6> */}
                               </div>
                               <div className="item">
                                   <img src={azureImg} alt="azure" />
                                   <h5>Azure Deployment</h5>
-                                  <h6>Years: ~1</h6>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={azureImg} alt="azure" />
+                                  <h5>Azure DevOps</h5>
+                                  {/* <h6>Years: ~1</h6> */}
                               </div>
                               <div className="item">
                                   <img src={gitImg} alt="git" />
                                   <h5>Git</h5>
-                                  <h6>Years: ~3</h6>
+                                  {/* <h6>Years: ~4</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={CICDImg} alt="git" />
+                                  <h5>CI/CD</h5>
+                                  {/* <h6>Years: ~2</h6> */}
                               </div>
                           </Carousel>
                       </div>

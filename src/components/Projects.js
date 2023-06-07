@@ -10,17 +10,17 @@ export const Projects = () => {
 
     const webProjs = [
         {
-          title: "Business Startup",
+          title: "Business Startup1",
           description: "Design & Development",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
+          title: "Business Startup2",
           description: "Design & Development",
           imgUrl: projImg2,
         },
         {
-          title: "Business Startup",
+          title: "Business Startup3",
           description: "Design & Development",
           imgUrl: projImg3,
         }
@@ -28,17 +28,17 @@ export const Projects = () => {
 
     const softProjs = [
         {
-          title: "Business Startup",
+          title: "Business Startup Soft1",
           description: "Design & Development",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
+          title: "Business Startup Soft2",
           description: "Design & Development",
           imgUrl: projImg2,
         },
         {
-          title: "Business Startup",
+          title: "Business Startup Soft3",
           description: "Design & Development",
           imgUrl: projImg3,
         }
@@ -46,17 +46,17 @@ export const Projects = () => {
 
     const fullProjs = [
         {
-          title: "Business Startup",
+          title: "Business Startup full1",
           description: "Design & Development",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
+          title: "Business Startup full2",
           description: "Design & Development",
           imgUrl: projImg2,
         },
         {
-          title: "Business Startup",
+          title: "Business Startup full3",
           description: "Design & Development",
           imgUrl: projImg3,
         }
@@ -64,7 +64,7 @@ export const Projects = () => {
 
 
     return (
-        <section className="project" id="project">
+        <section className="project" id="projects">
           <Container>
             <Row>
               <Col size={12}>
@@ -92,7 +92,7 @@ export const Projects = () => {
                               webProjs.map((webProj, index) => {
                                 return (
                                   <ProjectCard
-                                  key={index}
+                                  key={webProj.title}
                                     {...webProj}
                                     />
                                 )
@@ -106,7 +106,7 @@ export const Projects = () => {
                               softProjs.map((softProj, index) => {
                                 return (
                                   <ProjectCard
-                                  key={index}
+                                  key={softProj.title}
                                     {...softProj}
                                     />
                                 )
@@ -120,7 +120,7 @@ export const Projects = () => {
                               fullProjs.map((fullProj, index) => {
                                 return (
                                   <ProjectCard
-                                  key={index}
+                                  key={fullProj.title}
                                     {...fullProj}
                                     />
                                 )
