@@ -5,35 +5,38 @@ import TrackVisibility from 'react-on-screen';
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import ecom from "../assets/img/Ecommerce-site.JPG";
+import health from "../assets/img/RevaHealth.JPG";
+import flash from "../assets/img/flashcard-application.JPG";
 
 export const Projects = () => {
 
     const webProjs = [
         {
-          title: "Business Startup1",
-          description: "Design & Development",
-          imgUrl: projImg1,
+          title: "Full Stack Ecommerce Website",
+          description: "My team was given the code of a full stack website. We were told to refactor the backend to entity framework as well as to add a couple features such as deals as well as a persistent cart. We were then told to deploy the website to Azure using a CI/CD pipeline tool. My main role in this project was to maintain the sql server database as well as setup the CI/CD pipeline. I was also involved in the registration of a new user.",
+          imgUrl: ecom,
         },
         {
-          title: "Business Startup2",
+          title: "Health Insurance Portal",
           description: "Design & Development",
-          imgUrl: projImg2,
+          imgUrl: health,
         },
         {
-          title: "Business Startup3",
+          title: "Flashcard Application",
           description: "Design & Development",
-          imgUrl: projImg3,
+          imgUrl: flash,
         }
     ];
 
     const softProjs = [
         {
-          title: "Business Startup Soft1",
+          title: "Link Checker Project",
           description: "Design & Development",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup Soft2",
+          title: "Account Checking Windows Forms Application",
           description: "Design & Development",
           imgUrl: projImg2,
         },
@@ -44,23 +47,23 @@ export const Projects = () => {
         }
     ];
 
-    const fullProjs = [
-        {
-          title: "Business Startup full1",
-          description: "Design & Development",
-          imgUrl: projImg1,
-        },
-        {
-          title: "Business Startup full2",
-          description: "Design & Development",
-          imgUrl: projImg2,
-        },
-        {
-          title: "Business Startup full3",
-          description: "Design & Development",
-          imgUrl: projImg3,
-        }
-    ];
+    // const dataProjs = [
+    //     {
+    //       title: "Business Startup full1",
+    //       description: "Design & Development",
+    //       imgUrl: projImg1,
+    //     },
+    //     {
+    //       title: "Business Startup full2",
+    //       description: "Design & Development",
+    //       imgUrl: projImg2,
+    //     },
+    //     {
+    //       title: "Business Startup full3",
+    //       description: "Design & Development",
+    //       imgUrl: projImg3,
+    //     }
+    // ];
 
 
     return (
@@ -81,9 +84,9 @@ export const Projects = () => {
                         <Nav.Item>
                           <Nav.Link eventKey="second">Software Development</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="third">Full Stack Apps</Nav.Link>
-                        </Nav.Item>
+                        {/* <Nav.Item>
+                          <Nav.Link eventKey="third">Data Projects</Nav.Link>
+                        </Nav.Item> */}
                       </Nav>
                       <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Tab.Pane eventKey="first">
@@ -114,20 +117,20 @@ export const Projects = () => {
                             }
                           </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="third">
+                        {/* <Tab.Pane eventKey="third">
                         <Row>
                             {
-                              fullProjs.map((fullProj, index) => {
+                              dataProjs.map((dataProj, index) => {
                                 return (
                                   <ProjectCard
-                                  key={fullProj.title}
-                                    {...fullProj}
+                                  key={dataProj.title}
+                                    {...dataProj}
                                     />
                                 )
                               })
                             }
                           </Row>
-                        </Tab.Pane>
+                        </Tab.Pane> */}
                       </Tab.Content>
                     </Tab.Container>
                   </div>}

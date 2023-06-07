@@ -103,6 +103,8 @@ export const Contact = () => {
                     <Col size={12} sm={6} className="px-1">
                       <input type="email" value={formDetails.their_email} required placeholder="Email Address" onChange={(e) => onFormUpdate('their_email', e.target.value)} />
                     </Col>
+                  </Row>
+                  <Row>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} required placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                       <ReCAPTCHA sitekey='6LeSadElAAAAAJe8zPXzyReagHi1VOHcu90jCK-M' ref={captchaRef} onChange={verify} />

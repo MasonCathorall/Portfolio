@@ -8,6 +8,7 @@ import pythonImg from "../assets/img/python-seeklogo.com.svg";
 import azureImg from "../assets/img/azure-1-logo-svgrepo-com.svg";
 import gitImg from "../assets/img/Git_icon.svg";
 import CICDImg from "../assets/img/ci-cd-svgrepo-com.svg";
+import OOPImg from "../assets/img/oop-logo.png";
 
 export const Skills = () => {
     const responsive = {
@@ -75,9 +76,34 @@ export const Skills = () => {
                                   {/* <h6>Years: ~4</h6> */}
                               </div>
                               <div className="item">
-                                  <img src={CICDImg} alt="git" />
+                                  <img src={CICDImg} alt="cicd" />
                                   <h5>CI/CD</h5>
                                   {/* <h6>Years: ~2</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={OOPImg} alt="oop" />
+                                  <h5>OOP - Object Oriented Programming</h5>
+                                  {/* <h6>Years: ~4</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={undefined} alt="docker" />
+                                  <h5>Docker</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={undefined} alt="" />
+                                  <h5>MVC - Model View Controller</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={undefined} alt="" />
+                                  <h5>Jira</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={undefined} alt="" />
+                                  <h5> </h5>
+                                  {/* <h6>Years: ~1</h6> */}
                               </div>
                           </Carousel>
                       </div>
