@@ -4,7 +4,6 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import ecom from "../assets/img/Ecommerce-site.JPG";
 import health from "../assets/img/RevaHealth.JPG";
 import flash from "../assets/img/flashcard-application.JPG";
@@ -13,18 +12,18 @@ export const Projects = () => {
 
     const webProjs = [
         {
-          title: "Full Stack Ecommerce Website",
-          description: "My team was given the code of a full stack website. We were told to refactor the backend to entity framework as well as to add a couple features such as deals as well as a persistent cart. We were then told to deploy the website to Azure using a CI/CD pipeline tool. My main role in this project was to maintain the sql server database as well as setup the CI/CD pipeline. I was also involved in the registration of a new user.",
+          title: "Ecommerce Website",
+          description: "An Ecommerce Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server in a small group. We were told to refactor the backend to entity framework as well as to add a couple features such as deals as well as a persistent cart. My main role in this project was to design/maintain the sql server database as well as setup the CI/CD pipeline and register new user.",
           imgUrl: ecom,
         },
         {
           title: "Health Insurance Portal",
-          description: "Design & Development",
+          description: "A Health Insurance Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server in a small group. My roles for this project were to build the register employee and patient, design and implement an Azure SQL Server, implement password encryption using SHA256 and test all API endpoints.",
           imgUrl: health,
         },
         {
           title: "Flashcard Application",
-          description: "Design & Development",
+          description: "A Flashcard Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server on my own. I designed and created the Azure SQL Server using GUID as a Primary Key. I was also to implement all CRUD operations as well as be able to interchange the format of the cards to a table on button click.",
           imgUrl: flash,
         }
     ];
@@ -36,34 +35,11 @@ export const Projects = () => {
           imgUrl: projImg1,
         },
         {
-          title: "Account Checking Windows Forms Application",
+          title: "Checkbook Windows Forms App",
           description: "Design & Development",
           imgUrl: projImg2,
-        },
-        {
-          title: "Business Startup Soft3",
-          description: "Design & Development",
-          imgUrl: projImg3,
         }
     ];
-
-    // const dataProjs = [
-    //     {
-    //       title: "Business Startup full1",
-    //       description: "Design & Development",
-    //       imgUrl: projImg1,
-    //     },
-    //     {
-    //       title: "Business Startup full2",
-    //       description: "Design & Development",
-    //       imgUrl: projImg2,
-    //     },
-    //     {
-    //       title: "Business Startup full3",
-    //       description: "Design & Development",
-    //       imgUrl: projImg3,
-    //     }
-    // ];
 
 
     return (
@@ -75,7 +51,7 @@ export const Projects = () => {
                   {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                     <h2>Projects</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>These are a few of the projects that I have worked on. These projects were either worked on independently or with a small group of 3-4 other people.</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                       <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>

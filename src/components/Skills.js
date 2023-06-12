@@ -9,6 +9,11 @@ import azureImg from "../assets/img/azure-1-logo-svgrepo-com.svg";
 import gitImg from "../assets/img/Git_icon.svg";
 import CICDImg from "../assets/img/ci-cd-svgrepo-com.svg";
 import OOPImg from "../assets/img/oop-logo.png";
+import JiraImg from "../assets/img/jira-seeklogo.com.svg";
+import ASPImg from "../assets/img/asp.net.png";
+import ADOImg from "../assets/img/Adonet.webp";
+import DockerImg from "../assets/img/docker-svgrepo-com.svg";
+import MVCImg from "../assets/img/mvc.png";
 
 export const Skills = () => {
     const responsive = {
@@ -38,12 +43,27 @@ export const Skills = () => {
                   <div className="col-12">
                       <div className="skill-bx wow zoomIn">
                           <h2>Skills</h2>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has been the industry's standard dummy text.</p>
+                          {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has been the industry's standard dummy text.</p> */}
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                               <div className="item">
                                   <img src={csharpLogo} alt="csharp" />
                                   <h5>C#</h5>
                                   {/* <h6>Years: ~3</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={ADOImg} alt="ado.net" />
+                                  <h5>ADO.NET</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={ASPImg} alt="asp.net" />
+                                  <h5>ASP.NET</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={MVCImg} alt="mvc" />
+                                  <h5>MVC - Model View Controller</h5>
+                                  {/* <h6>Years: ~1</h6> */}
                               </div>
                               <div className="item">
                                   <img src={reactjsImg} alt="reactjs" />
@@ -86,25 +106,20 @@ export const Skills = () => {
                                   {/* <h6>Years: ~4</h6> */}
                               </div>
                               <div className="item">
-                                  <img src={undefined} alt="docker" />
+                                  <img src={DockerImg} alt="docker" />
                                   <h5>Docker</h5>
                                   {/* <h6>Years: ~1</h6> */}
                               </div>
                               <div className="item">
-                                  <img src={undefined} alt="" />
-                                  <h5>MVC - Model View Controller</h5>
-                                  {/* <h6>Years: ~1</h6> */}
-                              </div>
-                              <div className="item">
-                                  <img src={undefined} alt="" />
+                                  <img src={JiraImg} alt="jira" />
                                   <h5>Jira</h5>
                                   {/* <h6>Years: ~1</h6> */}
                               </div>
-                              <div className="item">
+                              {/* <div className="item">
                                   <img src={undefined} alt="" />
                                   <h5> </h5>
-                                  {/* <h6>Years: ~1</h6> */}
-                              </div>
+                                  { <h6>Years: ~1</h6> }
+                              </div> */}
                           </Carousel>
                       </div>
                   </div>
