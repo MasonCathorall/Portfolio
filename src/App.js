@@ -6,8 +6,13 @@ import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from 'react';
 
 const App = () => {
+
+  useEffect( () => {
+    document.title = "Mason's Portfolio";
+  }, []);
 
   return (
     <div className="App">
