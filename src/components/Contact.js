@@ -57,7 +57,7 @@ export const Contact = () => {
     setButtonText("Sending...");
     captchaRef.current.reset();
 
-    await axios.post("backend-mason.azurewebsites.net/post", captchaToken)
+    await axios.post("portfolio-backend-mason.azurewebsites.net/post", captchaToken)
         .then(res =>  {
           console.log(res);
           if(res.data === 'Human'){
