@@ -110,12 +110,14 @@ export const Contact = () => {
                       <ReCAPTCHA sitekey='6LeSadElAAAAAJe8zPXzyReagHi1VOHcu90jCK-M' ref={captchaRef} onChange={verify} />
                       <button type="submit" disabled={!enableBtn}><span>{buttonText}</span></button>
                     </Col>
+                    <Row>
                     {
                       status.message &&
                       <Col>
                         <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                       </Col>
                     }
+                    </Row>
                   </Row>
                   <div id="recaptcha-container"></div>
                 </form>
