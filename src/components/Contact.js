@@ -42,7 +42,7 @@ export const Contact = () => {
       'message': formDetails.message
     };
 
-    await emailjs.send(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_EMAIL_TEMPLATE, params, process.env.REACT_APP_EMAIL_KEY)
+    await emailjs.send(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_EMAIL_TEMPLATE, params, 'JkRbAaw8wDkKZndQT' )
       .then(function(response) {
         setStatus({ succes: true, message: 'Message sent successfully'});
         console.log('SUCCESS!', response.status, response.text);
