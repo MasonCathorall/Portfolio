@@ -7,6 +7,7 @@ import health from "../assets/img/RevaHealth.JPG";
 import flash from "../assets/img/flashcard-application.JPG";
 import chbk from "../assets/img/chbk-app.JPG";
 import link from "../assets/img/link.JPG";
+import ship from "../assets/img/shipping-app.JPG";
 
 export const Projects = () => {
 
@@ -38,6 +39,11 @@ export const Projects = () => {
           title: "Checkbook Windows Forms App",
           description: "Using C#, my group and I created a checkbook balancing application that could save a checkbook file as well as open a saved checkbook file. The person could then deposit or withdraw money using checks and/or cash. The file was to be able to be opened later and saved as a .chbk file extension. ",
           imgUrl: chbk,
+        },
+        {
+          title: "Shipping Windows Forms App",
+          description: "Using C#, my group and I created a Windows Forms Application that allows people to submit shipment requests as well as allows employees to complete the requests. Both employees and clients should be able to create an account as well as login. ",
+          imgUrl: ship,
         }
     ];
 
