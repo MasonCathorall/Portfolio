@@ -14,6 +14,8 @@ import ASPImg from "../assets/img/asp.net.png";
 import ADOImg from "../assets/img/Adonet.webp";
 import DockerImg from "../assets/img/docker-svgrepo-com.svg";
 import MVCImg from "../assets/img/mvc.png";
+import JSImg from "../assets/img/JavaScript_logo_2.svg";
+import TSImg from "../assets/img/Typescript_logo_2020.svg";
 
 export const Skills = () => {
     const responsive = {
@@ -115,10 +117,19 @@ export const Skills = () => {
                                   <h5>Jira</h5>
                                   {/* <h6>Years: ~1</h6> */}
                               </div>
+                              <div className="item">
+                                  <img src={JSImg} alt="javascript" />
+                                  <h5>Javascript</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={TSImg} alt="typescript" />
+                                  <h5>Typescript</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
                               {/* <div className="item">
                                   <img src={undefined} alt="" />
                                   <h5> </h5>
-                                  { <h6>Years: ~1</h6> }
                               </div> */}
                           </Carousel>
                       </div>
