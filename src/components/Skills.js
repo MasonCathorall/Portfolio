@@ -46,7 +46,7 @@ export const Skills = () => {
                       <div className="skill-bx wow zoomIn">
                           <h2>Skills</h2>
                           {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has been the industry's standard dummy text.</p> */}
-                          <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                          <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider" autoPlay>
                               <div className="item">
                                   <img src={csharpLogo} alt="csharp" />
                                   <h5>C#</h5>
