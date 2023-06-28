@@ -8,6 +8,9 @@ import flash from "../assets/img/flashcard-application.JPG";
 import chbk from "../assets/img/chbk-app.JPG";
 import link from "../assets/img/link.JPG";
 import ship from "../assets/img/shipping-app.JPG";
+import apple from "../assets/img/ApplePicker.JPG";
+import space from "../assets/img/SpaceInvaders.JPG";
+import arcade from "../assets/img/Arcade.JPG";
 
 export const Projects = () => {
 
@@ -37,15 +40,33 @@ export const Projects = () => {
         },
         {
           title: "Checkbook Windows Forms App",
-          description: "Using C#, my group and I created a checkbook balancing application that could save a checkbook file as well as open a saved checkbook file. The person could then deposit or withdraw money using checks and/or cash. The file was to be able to be opened later and saved as a .chbk file extension. ",
+          description: "In November 2020 using C#, my group and I created a checkbook balancing application that could save a checkbook file as well as open a saved checkbook file. The person could then deposit or withdraw money using checks and/or cash. The file was to be able to be opened later and saved as a .chbk file extension. ",
           imgUrl: chbk,
         },
         {
           title: "Shipping Windows Forms App",
-          description: "Using C#, my group and I created a Windows Forms Application that allows people to submit shipment requests as well as allows employees to complete the requests. Both employees and clients should be able to create an account as well as login. ",
+          description: "In December 2020 using C#, my group and I created a Windows Forms Application that allows people to submit shipment requests as well as allows employees to complete the requests. Both employees and clients should be able to create an account as well as login. ",
           imgUrl: ship,
         }
     ];
+
+    const gameProjs = [
+      {
+        title: "Arcade",
+        description: "In June 2022 using Unity game designer and C# myself and 2 teammates created a sort of arcade style game of older style games, such as snake, minesweeper, and pacman with a twist on them. All three games were contained in one single project complete with menus so that when you lost or wanted to stop playing the game you could go back to the main menu and select a different game.",
+        imgUrl: arcade,
+      },
+      {
+        title: "Spaceship VS Invaders",
+        description: "In May 2022 using the Unity game designer and C#, I created a Unity game using C# for the game logic. This game was similar to other spacecraft shooters like Galaga and used the C# code as the logic that the enemies would fly by as well as to use the arrow keys to control your character and spacebar to shoot.  The green shield has to rotate and there also needs to be at least 3 distinct enemy types each with different movement. I also was able to implement a life system in the game as well. I also used the C# code to simulate a moving background.",
+        imgUrl: space,
+      },
+      {
+        title: "Apple Catcher",
+        description: "In May 2022 using the Unity game designer and C#, I created a Unity game that used C# for the game logic. The point of the game was to catch the apples falling from the tree. If you miss an apple you lose a life. You are given 3 lives and for every apple you catch you get points. The high score will also auto update should it be beaten. The round indicator will likewise auto update.",
+        imgUrl: apple,
+      }
+  ];
 
 
     return (
@@ -66,9 +87,9 @@ export const Projects = () => {
                         <Nav.Item>
                           <Nav.Link eventKey="second">Software Development</Nav.Link>
                         </Nav.Item>
-                        {/* <Nav.Item>
-                          <Nav.Link eventKey="third">Data Projects</Nav.Link>
-                        </Nav.Item> */}
+                        <Nav.Item>
+                          <Nav.Link eventKey="third">Game Projects</Nav.Link>
+                        </Nav.Item>
                       </Nav>
                       <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Tab.Pane eventKey="first">
@@ -99,20 +120,20 @@ export const Projects = () => {
                             }
                           </Row>
                         </Tab.Pane>
-                        {/* <Tab.Pane eventKey="third">
+                        <Tab.Pane eventKey="third">
                         <Row>
                             {
-                              dataProjs.map((dataProj, index) => {
+                              gameProjs.map((gameProj, index) => {
                                 return (
                                   <ProjectCard
-                                  key={dataProj.title}
-                                    {...dataProj}
+                                  key={gameProj.title}
+                                    {...gameProj}
                                     />
                                 )
                               })
                             }
                           </Row>
-                        </Tab.Pane> */}
+                        </Tab.Pane>
                       </Tab.Content>
                     </Tab.Container>
                   </div>}
