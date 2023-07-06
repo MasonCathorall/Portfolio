@@ -11,6 +11,7 @@ import ship from "../assets/img/shipping-app.JPG";
 import apple from "../assets/img/ApplePicker.JPG";
 import space from "../assets/img/SpaceInvaders.JPG";
 import arcade from "../assets/img/Arcade.JPG";
+import github from "../assets/img/github.png";
 
 export const Projects = () => {
 
@@ -78,7 +79,9 @@ export const Projects = () => {
                   {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                     <h2>Projects</h2>
-                    <p>These are a few of the projects that I have worked on. These projects were either worked on independently or with a small group of 3-4 other people.</p>
+                    <p>These are a few of the projects that I have worked on. These projects were either worked on independently or with a small group of 3-4 other people.
+                      Link to projects: <a className="githubLink" href="https://github.com/MasonCathorall" target="_blank" rel="noopener noreferrer"><img class="githubLinkImg" src={github} alt="Github Link"/></a>
+                    </p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                       <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
