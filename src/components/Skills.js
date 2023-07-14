@@ -16,6 +16,7 @@ import DockerImg from "../assets/img/docker-svgrepo-com.svg";
 import MVCImg from "../assets/img/mvc.png";
 import JSImg from "../assets/img/JavaScript_logo_2.svg";
 import TSImg from "../assets/img/Typescript_logo_2020.svg";
+import SonarCloud from "../assets/img/sonarcloud-seeklogo.com.svg";
 
 export const Skills = () => {
     const responsive = {
@@ -125,6 +126,11 @@ export const Skills = () => {
                               <div className="item">
                                   <img src={TSImg} alt="typescript" />
                                   <h5>Typescript</h5>
+                                  {/* <h6>Years: ~1</h6> */}
+                              </div>
+                              <div className="item">
+                                  <img src={SonarCloud} alt="sonarcloud" />
+                                  <h5>SonarCloud</h5>
                                   {/* <h6>Years: ~1</h6> */}
                               </div>
                               {/* <div className="item">
