@@ -69,8 +69,8 @@ export const Skills = () => {
                                   {/* <h6>Years: ~1</h6> */}
                               </div>
                               <div className="item">
-                                  <img src={reactjsImg} alt="reactjs" />
-                                  <h5>ReactJS</h5>
+                                  <img src={reactjsImg} alt="react" />
+                                  <h5>React</h5>
                                   {/* <h6>Years: ~2</h6> */}
                               </div>
                               <div className="item">
