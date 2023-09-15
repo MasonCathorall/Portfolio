@@ -3,7 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
 import csharpLogo from "../assets/img/c--4.svg";
 import reactjsImg from "../assets/img/React-icon.svg.png";
-import angularjsImg from "../assets/img/Angular_full_color_logo.svg.png";
+import angularImg from "../assets/img/Angular_full_color_logo.svg.png";
 import pythonImg from "../assets/img/python-seeklogo.com.svg";
 import azureImg from "../assets/img/azure-1-logo-svgrepo-com.svg";
 import gitImg from "../assets/img/Git_icon.svg";
@@ -74,7 +74,7 @@ export const Skills = () => {
                                   {/* <h6>Years: ~2</h6> */}
                               </div>
                               <div className="item">
-                                  <img src={angularjsImg} alt="angular" />  
+                                  <img src={angularImg} alt="angular" />  
                                   <h5>Angular</h5>
                                   {/* <h6>Years: ~2</h6> */}
                               </div>
