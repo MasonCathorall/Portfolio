@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import { Container } from "react-bootstrap";
+import React from "react";
+// import { Container } from "react-bootstrap";
 import ibmFullStackImg from "../assets/img/FullStackCert.PNG";
 import ibmDevopsImg from "../assets/img/DevopsCert.PNG";
 
