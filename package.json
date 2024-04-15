@@ -22,7 +22,7 @@
     "react-multi-carousel": "^2.8.4",
     "react-on-screen": "^2.1.1",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "reaptcha": "^1.12.1",
     "web-vitals": "^3.5.1"
   },
@@ -53,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }
