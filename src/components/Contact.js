@@ -42,7 +42,7 @@ export const Contact = () => {
       'message': formDetails.message
     };
 
-    await emailjs.send('service_tjf6l6h', 'template_ex7dafu', params, 'JkRbAaw8wDkKZndQT' )
+    await emailjs.send('', '', params, '' )
       .then(function(response) {
         setStatus({ succes: true, message: 'Message sent successfully'});
         console.log('SUCCESS!', response.status, response.text);

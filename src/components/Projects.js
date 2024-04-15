@@ -36,7 +36,7 @@ export const Projects = () => {
     const softProjs = [
         {
           title: "Link Checker Project",
-          description: "Using Python my senior project group and I created a desktop application for both MacOS and Windows that can take in a list of links held in a .docx file format. The application sends a request to each link to get the response code. Every code that returns a 3** or 4** http code gets compiled into an email then is sent to all of the recipients using BCC so that each recipient can’t see each other. This program was also supposed to happen automatically, such as once a week using cronjob for Mac and WIndows Task Scheduler for Windows.",
+          description: "Using Python my senior project group and I created a desktop application for both MacOS and Windows that can take in a list of links held in a .docx file format. The application sends a request to each link to get the response code. Every code that returns a 3** or 4** http code gets compiled into an email then is sent to all of the recipients using BCC so that each recipient can’t see each other. This program was also supposed to happen automatically, such as once a week using cronjob for Mac and Windows Task Scheduler for Windows.",
           imgUrl: link,
         },
         {
