@@ -12,25 +12,31 @@ import apple from "../assets/img/ApplePicker.JPG";
 import space from "../assets/img/SpaceInvaders.JPG";
 import arcade from "../assets/img/Arcade.JPG";
 import github from "../assets/img/github.png";
+import mom from "../assets/img/mom-website.png";
 
 export const Projects = () => {
 
     const webProjs = [
-        {
-          title: "Ecommerce Website",
-          description: "An Ecommerce Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server in a small group. We were told to refactor the backend to entity framework as well as to add a couple features such as deals as well as a persistent cart. My main role in this project was to design/maintain the sql server database as well as setup the CI/CD pipeline and register new user.",
-          imgUrl: ecom,
-        },
-        {
-          title: "Health Insurance Portal",
-          description: "A Health Insurance Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server in a small group. My roles for this project were to build the register employee and patient, design and implement an Azure SQL Server, implement password encryption using SHA256 and test all API endpoints.",
-          imgUrl: health,
-        },
-        {
-          title: "Flashcard Application",
-          description: "A Flashcard Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server on my own. I designed and created the Azure SQL Server using GUID as a Primary Key. I was also to implement all CRUD operations as well as be able to interchange the format of the cards to a table on button click.",
-          imgUrl: flash,
-        }
+      {
+        title: "Travel Study Website",
+        description: "An informational application that provides users with information about a travel abroad study program for the univercity of North Carolina Wilmington (UNCW).",
+        imgUrl: mom,
+      },
+      {
+        title: "Ecommerce Website",
+        description: "An Ecommerce Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server in a small group. We were told to refactor the backend to entity framework as well as to add a couple features such as deals as well as a persistent cart. My main role in this project was to design/maintain the sql server database as well as setup the CI/CD pipeline and register new user.",
+        imgUrl: ecom,
+      },
+      {
+        title: "Health Insurance Portal",
+        description: "A Health Insurance Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server in a small group. My roles for this project were to build the register employee and patient, design and implement an Azure SQL Server, implement password encryption using SHA256 and test all API endpoints.",
+        imgUrl: health,
+      },
+      {
+        title: "Flashcard Application",
+        description: "A Flashcard Application that was created using C#, ASP.NET Core Web API and Angular with SQL Server on my own. I designed and created the Azure SQL Server using GUID as a Primary Key. I was also to implement all CRUD operations as well as be able to interchange the format of the cards to a table on button click.",
+        imgUrl: flash,
+      }
     ];
 
     const softProjs = [

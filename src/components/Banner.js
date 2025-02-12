@@ -9,7 +9,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [, setIndex] = useState(1);
+    const [index, setIndex] = useState(1);
     const toRotate = [ "Web Developer", "Software Developer", "Software Engineer" ];
     const period = 2000;
 
