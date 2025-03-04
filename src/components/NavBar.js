@@ -3,13 +3,21 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github-mark-white.svg';
-import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const showPopup = () => {
+    setIsPopupVisible(true);
+  };
+
+  const hidePopup = () => {
+    setIsPopupVisible(false);
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -50,12 +58,24 @@ export const NavBar = () => {
               <a href="https://www.linkedin.com/in/mason-cathorall-823a64262/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn Link" /></a>
               <a href="https://github.com/MasonCathorall" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Github Link" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Contact Me</span></button>
-              </HashLink>
+              <div>
+                <button className="vvd" onClick={showPopup}><span>Contact Me</span></button>
+              </div>
             </span>
           </Navbar.Collapse>
         </Container>
+        <div>
+          {isPopupVisible && (
+            <div className="popup">
+              <div className="popup-content">
+                <p>The "Contact Me" functionality</p>
+                <p>is currently under maintainence.</p>
+                <br />
+                <button className="closeBtn" onClick={hidePopup}>Close</button>
+              </div>
+            </div>
+          )}
+        </div>
       </Navbar>
     </Router>
   )
